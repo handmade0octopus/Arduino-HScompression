@@ -12,9 +12,9 @@
     #define HEATSHRINK_FREE(P, SZ) free(P)
 #else
     /* Required parameters for static configuration */
-    #define HEATSHRINK_STATIC_INPUT_BUFFER_SIZE 32
-    #define HEATSHRINK_STATIC_WINDOW_BITS 4
-    #define HEATSHRINK_STATIC_LOOKAHEAD_BITS 3
+    #define HEATSHRINK_STATIC_INPUT_BUFFER_SIZE 1024
+    #define HEATSHRINK_STATIC_WINDOW_BITS 9
+    #define HEATSHRINK_STATIC_LOOKAHEAD_BITS 6
 #endif
 
 /* Turn on logging for debugging. */
